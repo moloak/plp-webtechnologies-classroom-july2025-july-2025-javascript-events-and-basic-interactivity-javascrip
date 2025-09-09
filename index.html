@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event handling in Javascript, Interactive Elements, and Form Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>Welcome to Event handlers, Interactive Elements and Form Validation</header>
+    <main>
+        <!-- Interactive UI elements(toggle button)-->
+        <button onclick="hideElement()">Click Me to hide header</button>
+        <br><br>
+        <button onclick="toggleTheme()">Toggle Dark Mode</button>
+        <br><br>
+
+        <!-- Dropdown menu-->
+        <div class="dropdown">
+            <button onmouseover="toggleDropdown()" class ="dropbtn">Items Available</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Egg</a>
+                <a href="#">Fish</a>
+                <a href="#">Milk</a>
+            </div>
+        </div>
+        
+        <!-- Form validation-->
+        <form id="myForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <span id="usernameError" class="error"></span>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <span id="emailError" class="error"></span>
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <span id="passwordError" class="error"></span>
+            <br><br>
+            <input type="submit" value="Submit">
+    </main>
+    <footer>
+        <p>Footer</p> 
+    </footer>
+</body>
+<script src="js/script.js"></script>
+</html>
